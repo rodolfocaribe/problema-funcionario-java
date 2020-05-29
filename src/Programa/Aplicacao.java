@@ -10,7 +10,7 @@ public class Aplicacao {
 		Scanner sc = new Scanner(System.in);
 				
 		String funcionario;
-		char resposta;			
+		char resposta, escolhaMenu;			
 		int horasTrabalhadas;
 		double valorPorHora;
 		
@@ -33,7 +33,17 @@ public class Aplicacao {
 			resposta = sc.next().charAt(0);
 			
 			} while (resposta == 'S' || resposta =='s');
-				
-			}
+		
+		do {
+			System.out.println();
+			System.out.println("MENU");
+			System.out.println("1 - Total de horas trabalhadas");
+			System.out.println("2 - Custo total");
+			System.out.println("3 - Nome da pessoa que ganhou mais");
+			System.out.println("4 - Sair");
+			System.out.print("Digite uma opção: ");
+			escolhaMenu = sc.next().charAt(0);
+			}while (escolhaMenu != '4');
+	}
 				
 }
